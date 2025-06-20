@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataStructures.dev - Learn Data Structures Through Interactive Code</title>
+    <meta name="description" content="Master data structures with comprehensive implementations, visual explanations, and interactive examples. Perfect for developers learning algorithms and data structures.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16,18 22,12 16,6"></polyline>
+                            <polyline points="8,6 2,12 8,18"></polyline>
+                        </svg>
+                    </div>
+                    <div class="logo-text">
+                        <h1>DataStructures.dev</h1>
+                        <p>Learn • Implement • Master</p>
+                    </div>
+                </div>
+                
+                <nav class="nav">
+                    <a href="#overview">Overview</a>
+                    <a href="#structures">Data Structures</a>
+                    <a href="#playground">Playground</a>
+                </nav>
+
+               
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="13,2 3,14 12,14 11,22 21,10 12,10 13,2"></polygon>
+                    </svg>
+                    Master Data Structures with Interactive Learning
+                </div>
+                
+                <h1 class="hero-title">
+                    Learn Data Structures
+                    <span class="gradient-text">Through Code</span>
+                </h1>
+                
+                <p class="hero-description">
+                    Comprehensive implementations, visual explanations, and interactive examples 
+                    to master fundamental data structures and algorithms.
+                </p>
+                
+                <div class="hero-actions">
+                    <a href="#structures" class="btn btn-primary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                        </svg>
+                        Explore Structures
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12,5 19,12 12,19"></polyline>
+                        </svg>
+                    </a>
+                    
+                    <a href="#playground" class="btn btn-secondary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16,18 22,12 16,6"></polyline>
+                            <polyline points="8,6 2,12 8,18"></polyline>
+                        </svg>
+                        Try Playground
+                    </a>
+                </div>
+                
+                <div class="hero-features">
+                    <div class="feature-card">
+                        <div class="feature-icon blue">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16,18 22,12 16,6"></polyline>
+                                <polyline points="8,6 2,12 8,18"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Clean Implementations</h3>
+                        <p>Well-documented code examples with detailed explanations</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon green">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="13,2 3,14 12,14 11,22 21,10 12,10 13,2"></polygon>
+                            </svg>
+                        </div>
+                        <h3>Interactive Examples</h3>
+                        <p>Visualize operations and understand complexity analysis</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon purple">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                            </svg>
+                        </div>
+                        <h3>Complete Learning</h3>
+                        <p>From basics to advanced concepts with real-world use cases</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Structures Section -->
+    <section id="structures" class="structures-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Explore Data Structures</h2>
+                <p>Dive deep into implementations, complexity analysis, and practical applications</p>
+            </div>
+
+            <!-- Search and Filter -->
+            <div class="search-filter">
+                <div class="search-box">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input type="text" id="searchInput" placeholder="Search data structures...">
+                </div>
+                
+                <div class="filter-box">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="22,3 2,3 10,12.46 10,19 14,21 14,12.46 22,3"></polygon>
+                    </svg>
+                    <select id="complexityFilter">
+                        <option value="">All Complexities</option>
+                        <option value="O(1)">O(1) - Constant</option>
+                        <option value="O(log n)">O(log n) - Logarithmic</option>
+                        <option value="O(n)">O(n) - Linear</option>
+                        <option value="O(n log n)">O(n log n) - Linearithmic</option>
+                        <option value="O(n²)">O(n²) - Quadratic</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Data Structure Cards -->
+            <div class="structures-grid" id="structuresGrid">
+                <!-- Cards will be generated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Reference -->
+    <section class="quick-reference">
+        <div class="container">
+            <div class="section-header">
+                <h2>Quick Reference Guide</h2>
+                <p>Essential knowledge for understanding and choosing data structures</p>
+            </div>
+
+            <div class="reference-grid">
+                <div class="reference-card">
+                    <h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12,6 12,12 16,14"></polyline>
+                        </svg>
+                        Big O Complexity Guide
+                    </h3>
+                    <div class="complexity-list">
+                        <div class="complexity-item">
+                            <span class="complexity-notation green">O(1)</span>
+                            <div class="complexity-info">
+                                <strong>Constant</strong>
+                                <p>Same time regardless of input size</p>
+                            </div>
+                        </div>
+                        <div class="complexity-item">
+                            <span class="complexity-notation blue">O(log n)</span>
+                            <div class="complexity-info">
+                                <strong>Logarithmic</strong>
+                                <p>Increases slowly with input size</p>
+                            </div>
+                        </div>
+                        <div class="complexity-item">
+                            <span class="complexity-notation yellow">O(n)</span>
+                            <div class="complexity-info">
+                                <strong>Linear</strong>
+                                <p>Time increases proportionally</p>
+                            </div>
+                        </div>
+                        <div class="complexity-item">
+                            <span class="complexity-notation orange">O(n log n)</span>
+                            <div class="complexity-info">
+                                <strong>Linearithmic</strong>
+                                <p>Common in efficient sorting</p>
+                            </div>
+                        </div>
+                        <div class="complexity-item">
+                            <span class="complexity-notation red">O(n²)</span>
+                            <div class="complexity-info">
+                                <strong>Quadratic</strong>
+                                <p>Time increases quadratically</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reference-card">
+                    <h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="13,2 3,14 12,14 11,22 21,10 12,10 13,2"></polygon>
+                        </svg>
+                        Pro Tips
+                    </h3>
+                    <div class="tips-list">
+                        <div class="tip-item">
+                            <div class="tip-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>Choose the Right Structure</strong>
+                                <p>Arrays for random access, Linked Lists for frequent insertions</p>
+                            </div>
+                        </div>
+                        <div class="tip-item">
+                            <div class="tip-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12,6 12,12 16,14"></polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>Consider Time vs Space</strong>
+                                <p>Sometimes using more memory can make operations faster</p>
+                            </div>
+                        </div>
+                        <div class="tip-item">
+                            <div class="tip-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="13,2 3,14 12,14 11,22 21,10 12,10 13,2"></polygon>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>Hash Tables for Speed</strong>
+                                <p>Use hash tables when you need fast lookups and insertions</p>
+                            </div>
+                        </div>
+                        <div class="tip-item">
+                            <div class="tip-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>Practice Implementation</strong>
+                                <p>Understanding the code helps you choose the right structure</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16,18 22,12 16,6"></polyline>
+                                <polyline points="8,6 2,12 8,18"></polyline>
+                            </svg>
+                        </div>
+                        <div class="logo-text">
+                            <h3>DataStructures.dev</h3>
+                            <p>Learn • Implement • Master</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        A comprehensive resource for learning data structures through interactive examples, 
+                        clean implementations, and detailed explanations.
+                    </p>
+                    <div class="social-links">
+                       <!-- <a href="https://github.com" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                            </svg>
+                        </a>-->
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Data Structures</h4>
+                        <ul>
+                            <li><a href="#array">Arrays</a></li>
+                            <li><a href="#linked-list">Linked Lists</a></li>
+                            <li><a href="#stack">Stacks</a></li>
+                            <li><a href="#queue">Queues</a></li>
+                            <li><a href="#binary-tree">Binary Trees</a></li>
+                            <li><a href="#hash-table">Hash Tables</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="link-group">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#complexity">Complexity Guide</a></li>
+                            <li><a href="#playground">Code Playground</a></li>
+                            <li><a href="#examples">Examples</a></li>
+                            <li><a href="#best-practices">Best Practices</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 DataStructures.dev. Built with HTML, CSS, and JavaScript.</p>
+                <p class="footer-love">
+                    Made with 
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="heart">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                    </svg>
+                    for developers learning data structures-KUNAL CHAUHAN
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
